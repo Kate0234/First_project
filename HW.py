@@ -29,3 +29,12 @@
 #print(f"n1: {n1} n2:{n2} n3:{n3} n4:{n4})")
 #print(f"Result: {result}")
 
+#Task 1-1
+print("Enter 3 digit below to define the number with the highest value.")
+a, b, c = int(input("Enter the first number:")), int(input("Enter the second number:")), int(input("Enter the third number:")),
+mx = a
+if b > mx:
+    mx = b
+if c > mx:
+    mx = c
+print(mx)
