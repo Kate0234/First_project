@@ -38,3 +38,13 @@ if b > mx:
 if c > mx:
     mx = c
 print(mx)
+
+
+print("Enter 3 digit below to define the number with the lowest value.")
+a, b, c = int(input("Enter the first number:")), int(input("Enter the second number:")), int(input("Enter the third number:")),
+mn = a
+if b < a:
+    mn = b
+if c < a:
+    mn = c
+print(mn)
