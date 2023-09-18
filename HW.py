@@ -48,3 +48,9 @@ if b < a:
 if c < a:
     mn = c
 print(mn)
+
+
+print("Enter 3 digit below to define the arithmetic value.")
+a, b, c = int(input("Enter the first number:")), int(input("Enter the second number:")), int(input("Enter the third number:")),
+result = ( a + b + c) / 3
+print(f"Result: {result}")
