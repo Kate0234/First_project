@@ -118,3 +118,27 @@
         #    print("Incorrect value! Choose number from 1 to 7!")
 #except Exception as e:
     #print(f"Error: {e}. Enter number!")
+
+#Lesson 3. Task 2
+
+#while True:
+    #try:
+        #a, b = int(input(" Enter first number (a):")), int(input("Enter second number (b):"))
+        #data = a, b
+        #if a == b:
+        #   print("Numbers equal")
+        #elif a > b or b > a:
+        #  print(sorted(data))
+        #break
+    #except ValueError:
+        #print("Enter number!")
+    #continue
+
+#Lesson 3. Task 3
+
+
+
+
+
+
+
