@@ -92,3 +92,29 @@
 #     print("Wrong choice!")
 
 #test comment to try commit and push
+
+#Lesson 3. Task 1
+
+#try:
+    #print("Enter the number that corresponds to the day of the week: 1 - Monday, 2 - Thursday. 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday, 7 - Sunday")
+    #user_select = int(input("Enter number: " ))
+
+    #match user_select:
+        #case 1:
+           # print("Monday")
+        #case 2:
+       #     print("Tuesday")
+       # case 3:
+            #print("Wednesday")
+        #case 4:
+            #print("Thursday")
+        #case 5:
+            #print("Friday")
+        #case 6:
+       #     print("Saturday")
+       # case 7:
+           # print("Sunday")
+        #case 8:
+        #    print("Incorrect value! Choose number from 1 to 7!")
+#except Exception as e:
+    #print(f"Error: {e}. Enter number!")
