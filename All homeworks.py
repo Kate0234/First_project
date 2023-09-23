@@ -137,6 +137,53 @@
 #Lesson 3. Task 3
 
 
+print("Enter two numbers and choose action you want to perform.")
+n1, n2 = int(input("Enter first number:")), int(input("Enter second number:"))
+user_select = int(input("1.Sum up 2.Exclude 3.Multiply 4.Divide.\n Enter number of action:"))
+
+try:
+    match user_select:
+             case 1:
+                 result = n1 + n2
+                 print(f"Result: {result}")
+             case 2:
+                    result = n1 - n2
+                    print(f"Result: {result}")
+             case 3:
+                  if n1 > 0 and n2 > 0 :
+                      result = n1 * n2
+                      print(f"Result: {result}")
+                  elif n1 == 0:
+                      result = 0
+                      print(f"Result: {result}")
+                  elif n2 == 0:
+                      result = 0
+                      print(f"Result: {result}")
+             case 4:
+                  while True:
+                      try:
+                            if n1 > 0 and n2 > 0:
+                              result = n1 / n2
+                              print(f"Result: {result}")
+                            elif n1 == 0:
+                              result = n1 / n2
+                              print(f"Result: {result}")
+                            elif n2 == 0:
+                                result = n1 / n2
+                      except Exception as e:
+                             print(f"Error: {e}. You cannot divide into 0!")
+                      break
+finally:
+    print("End of calculation")
+
+
+
+
+
+
+
+
+
 
 
 
