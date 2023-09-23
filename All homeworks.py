@@ -136,14 +136,14 @@
 
 #Lesson 3. Task 3
 
-
-print("Enter two numbers and choose action you want to perform.")
-n1, n2 = int(input("Enter first number:")), int(input("Enter second number:"))
-user_select = int(input("1.Sum up 2.Exclude 3.Multiply 4.Divide.\n Enter number of action:"))
+print("Enter two numbers to perform further calculations.")
+n1, n2 = int(input("Enter n1:")), int(input("Enter n2:"))
+print("1.Sum 2. Exclude 3. Multiply 4. Divide")
+user_select = int(input("Enter number of option you want to perform:"))
 
 try:
     match user_select:
-             case 1:
+             case 1:2
                  result = n1 + n2
                  print(f"Result: {result}")
              case 2:
