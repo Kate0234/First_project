@@ -95,47 +95,50 @@
 
 #Lesson 3. Task 1
 
-#try:
-    #print("Enter the number that corresponds to the day of the week: 1 - Monday, 2 - Thursday. 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday, 7 - Sunday")
-    #user_select = int(input("Enter number: " ))
+print("Lesson 3. Task 1")
+try:
+    print("Enter the number that corresponds to the day of the week: 1 - Monday, 2 - Thursday. 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday, 7 - Sunday")
+    user_select = int(input("Enter number: " ))
 
-    #match user_select:
-        #case 1:
-           # print("Monday")
-        #case 2:
-       #     print("Tuesday")
-       # case 3:
-            #print("Wednesday")
-        #case 4:
-            #print("Thursday")
-        #case 5:
-            #print("Friday")
-        #case 6:
-       #     print("Saturday")
-       # case 7:
-           # print("Sunday")
-        #case 8:
-        #    print("Incorrect value! Choose number from 1 to 7!")
-#except Exception as e:
-    #print(f"Error: {e}. Enter number!")
+    match user_select:
+        case 1:
+           print("Monday")
+        case 2:
+            print("Tuesday")
+        case 3:
+           print("Wednesday")
+        case 4:
+            print("Thursday")
+        case 5:
+            print("Friday")
+        case 6:
+           print("Saturday")
+        case 7:
+            print("Sunday")
+        case 8:
+           print("Incorrect value! Choose number from 1 to 7!")
+except Exception as e:
+    print(f"Error: {e}. Enter number!")
 
 #Lesson 3. Task 2
 
-#while True:
-    #try:
-        #a, b = int(input(" Enter first number (a):")), int(input("Enter second number (b):"))
-        #data = a, b
-        #if a == b:
-        #   print("Numbers equal")
-        #elif a > b or b > a:
-        #  print(sorted(data))
-        #break
-    #except ValueError:
-        #print("Enter number!")
-    #continue
+print("Lesson 3. Task 2")
+while True:
+    try:
+        a, b = int(input(" Enter first number (a):")), int(input("Enter second number (b):"))
+        data = a, b
+        if a == b:
+           print("Numbers equal")
+        elif a > b or b > a:
+          print(sorted(data))
+        break
+    except ValueError:
+        print("Enter number!")
+    continue
 
 #Lesson 3. Task 3
 
+print("Lesson 3. Task 3")
 print("Enter two numbers to perform further calculations.")
 n1, n2 = int(input("Enter n1:")), int(input("Enter n2:"))
 print("1.Sum 2. Exclude 3. Multiply 4. Divide")
@@ -143,7 +146,7 @@ user_select = int(input("Enter number of option you want to perform:"))
 
 try:
     match user_select:
-             case 1:2
+             case 1:
                  result = n1 + n2
                  print(f"Result: {result}")
              case 2:
