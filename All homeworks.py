@@ -95,95 +95,130 @@
 
 #Lesson 3. Task 1
 
-print("Lesson 3. Task 1")
-try:
-    print("Enter the number that corresponds to the day of the week: 1 - Monday, 2 - Thursday. 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday, 7 - Sunday")
-    user_select = int(input("Enter number: " ))
+#print("Lesson 3. Task 1")
+#try:
+    #print("Enter the number that corresponds to the day of the week: 1 - Monday, 2 - Thursday. 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday, 7 - Sunday")
+    #user_select = int(input("Enter number: " ))
 
-    match user_select:
-        case 1:
-           print("Monday")
-        case 2:
-            print("Tuesday")
-        case 3:
-           print("Wednesday")
-        case 4:
-            print("Thursday")
-        case 5:
-            print("Friday")
-        case 6:
-           print("Saturday")
-        case 7:
-            print("Sunday")
-        case 8:
-           print("Incorrect value! Choose number from 1 to 7!")
-except Exception as e:
-    print(f"Error: {e}. Enter number!")
+    #match user_select:
+        #case 1:
+           #print("Monday")
+        #case 2:
+            #print("Tuesday")
+        #case 3:
+           #print("Wednesday")
+        #case 4:
+            #print("Thursday")
+        #case 5:
+            #print("Friday")
+        #case 6:
+           #print("Saturday")
+        #case 7:
+            #print("Sunday")
+        #case 8:
+            #print("Incorrect value! Choose number from 1 to 7!")
+#except Exception as e:
+    #print(f"Error: {e}. Enter number!")
 
 #Lesson 3. Task 2
 
-print("Lesson 3. Task 2")
-while True:
-    try:
-        a, b = int(input(" Enter first number (a):")), int(input("Enter second number (b):"))
-        data = a, b
-        if a == b:
-           print("Numbers equal")
-        elif a > b or b > a:
-          print(sorted(data))
-        break
-    except ValueError:
-        print("Enter number!")
-    continue
+#print("Lesson 3. Task 2")
+#while True:
+    #try:
+        #a, b = int(input(" Enter first number (a):")), int(input("Enter second number (b):"))
+        #data = a, b
+        #if a == b:
+           #print("Numbers equal")
+        #elif a > b or b > a:
+          #print(sorted(data))
+        #break
+        #except ValueError:
+        #print("Enter number!")
+    #continue
 
 #Lesson 3. Task 3
 
-print("Lesson 3. Task 3")
-print("Enter two numbers to perform further calculations.")
-n1, n2 = int(input("Enter n1:")), int(input("Enter n2:"))
-print("1.Sum 2. Exclude 3. Multiply 4. Divide")
-user_select = int(input("Enter number of option you want to perform:"))
+#print("Lesson 3. Task 3")
+#print("Enter two numbers to perform further calculations.")
+#n1, n2 = int(input("Enter n1:")), int(input("Enter n2:"))
+#print("1.Sum 2. Exclude 3. Multiply 4. Divide")
+#user_select = int(input("Enter number of option you want to perform:"))
 
-try:
-    match user_select:
-             case 1:
-                 result = n1 + n2
-                 print(f"Result: {result}")
-             case 2:
-                    result = n1 - n2
-                    print(f"Result: {result}")
-             case 3:
-                  if n1 > 0 and n2 > 0 :
-                      result = n1 * n2
-                      print(f"Result: {result}")
-                  elif n1 == 0:
-                      result = 0
-                      print(f"Result: {result}")
-                  elif n2 == 0:
-                      result = 0
-                      print(f"Result: {result}")
-             case 4:
-                  while True:
-                      try:
-                            if n1 > 0 and n2 > 0:
-                              result = n1 / n2
-                              print(f"Result: {result}")
-                            elif n1 == 0:
-                              result = n1 / n2
-                              print(f"Result: {result}")
-                            elif n2 == 0:
-                                result = n1 / n2
-                      except Exception as e:
-                             print(f"Error: {e}. You cannot divide into 0!")
-                      break
-finally:
-    print("End of calculation")
+#try:
+    #match user_select:
+             #case 1:
+                 #result = n1 + n2
+                 #print(f"Result: {result}")
+             #case 2:
+                    #result = n1 - n2
+                    #print(f"Result: {result}")
+             #case 3:
+                  #if n1 > 0 and n2 > 0 :
+                      #result = n1 * n2
+                      #print(f"Result: {result}")
+                #elif n1 == 0:
+                      #result = 0
+                      #print(f"Result: {result}")
+                #elif n2 == 0:
+                      #result = 0
+                      #print(f"Result: {result}")
+             #case 4:
+                  #while True:
+                      #try:
+                            #if n1 > 0 and n2 > 0:
+                              #result = n1 / n2
+                              #print(f"Result: {result}")
+                            #elif n1 == 0:
+                              #result = n1 / n2
+                              #print(f"Result: {result}")
+                            #elif n2 == 0:
+                                #result = n1 / n2
+                            #except Exception as e:
+                             #print(f"Error: {e}. You cannot divide into 0!")
+                      #finally:
+    #print("End of calculation")
 
-
-
+#Lesson 4. Task 1
 
 
 
+
+#Lesson 4. Task 2 +
+
+
+#message = ("After 146 days of striking, the Writers Guild of America (WGA), the union representing Hollywood writers,"
+          # "has announced that it had reached a tentative agreement to end the negotiation impasse which,"
+           #"coupled with an actors strike, has brought the industry to a standstill.")
+#count = 0
+#for letter in message:
+    #if letter == "a":
+       # count+=1
+       # print(count)
+
+
+
+
+
+
+#Lesson 4. Task 3
+
+
+
+
+
+
+#Lesson 4. Task 4
+
+#sentence = "Our first chart illustrates the following."
+#print(sentence[2]) #1 +
+#print(sentence[-2]) #2 +
+#print(sentence[:5]) #3 +
+#print(sentence[0:40]) #4 +
+#print(sentence[1:42:2]) #5 +
+#print(sentence[0:42:2]) #6 +
+#print(sentence[::-1]) #7 +
+#print(sentence[::-1,2]) #8 +
+#print(len(sentence)) #9 +
 
 
 
