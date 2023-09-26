@@ -180,42 +180,46 @@
 
 #Lesson 4. Task 1
 
+text = ("As illustrated by this infographic, the share of writers working for the absolute "
+        "minimum set by the MBA grew significantly from the 2013-14 season to the 2021-22 season. "
+        "In total, the share of writers at the minimum level rose from 33 to 49 percent.")
+print(len([i for i in text if i.isdigit()]))
+print(len([i for i in text if i.isalpha()]))
 
 
 
-#Lesson 4. Task 2 +
+#Lesson 4. Task 2
 
 
-#message = ("After 146 days of striking, the Writers Guild of America (WGA), the union representing Hollywood writers,"
-          # "has announced that it had reached a tentative agreement to end the negotiation impasse which,"
-           #"coupled with an actors strike, has brought the industry to a standstill.")
-#count = 0
-#for letter in message:
-    #if letter == "a":
-       # count+=1
-       # print(count)
+message = ("After 146 days of striking, the Writers Guild of America (WGA), the union representing Hollywood writers,"
+           "has announced that it had reached a tentative agreement to end the negotiation impasse which,"
+           "coupled with an actors strike, has brought the industry to a standstill.")
+count = 0
+for letter in message:
+    if letter == "a":
+        count += 1
+        print(count)
 
 
-#Lesson 4. Task 3 +
+#Lesson 4. Task 3
 
-#text = "Hi! I want to request funds."
-#text = text.replace("funds","vacation")
-#print(text)
-
+text = "Hi! I want to request funds."
+text = text.replace("funds","vacation")
+print(text)
 
 
 #Lesson 4. Task 4
 
-#sentence = "Our first chart illustrates the following."
-#print(sentence[2]) #1 +
-#print(sentence[-2]) #2 +
-#print(sentence[:5]) #3 +
-#print(sentence[0:40]) #4 +
-#print(sentence[1:42:2]) #5 +
-#print(sentence[0:42:2]) #6 +
-#print(sentence[::-1]) #7 +
-#print(sentence[::-1,2]) #8 +
-#print(len(sentence)) #9 +
+message = "Our first chart illustrates the following."
+print(message[2]) #1
+print(message[-2]) #2
+print(message[:5]) #3
+print(message[0:40]) #4
+print(message[1:42:2]) #5
+print(message[0:42:2]) #6
+print(message[::-1]) #7
+#print(message[::, 2]) #8
+print(len(message)) #9
 
 
 
