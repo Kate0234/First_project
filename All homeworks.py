@@ -196,14 +196,11 @@
        # print(count)
 
 
+#Lesson 4. Task 3 +
 
-
-
-
-#Lesson 4. Task 3
-
-
-
+#text = "Hi! I want to request funds."
+#text = text.replace("funds","vacation")
+#print(text)
 
 
 
