@@ -218,69 +218,84 @@
 #print(message[1:42:2]) #5
 #print(message[0:42:2]) #6
 #print(message[::-1]) #7
-#print(message[::, 2]) #8
+#print(message[::2]) #8
 #print(len(message)) #9
 
 #Lesson 5. Task 1
 
-nums = [ 1, 7, 4, -5, -11, 3, 76, -34, 6, 2, 9 ]
-print(nums)
+#nums = [ 1, 7, 4, -5, -11, 3, 76, -34, 6, 2, 9 ]
+#print(nums)
 
 # сума негативних чисел
 
-sum_of_negative = 0
-for i in nums:
-    if i < 0:
-        sum_of_negative = sum_of_negative + i
-print("Sum of negatives:", sum_of_negative)
+#sum_of_negative = 0
+#for i in nums:
+    #if i < 0:
+        #sum_of_negative = sum_of_negative + i
+#print("Sum of negatives:", sum_of_negative)
 
 # сума парних чисел
 
-sum_of_paired = 0
-for i in nums:
-    if i % 2 == 0:
-        sum_of_paired = sum_of_paired + i
-print("Sum of paired:", sum_of_paired)
+#sum_of_paired = 0
+#for i in nums:
+    #if i % 2 == 0:
+        #sum_of_paired = sum_of_paired + i
+#print("Sum of paired:", sum_of_paired)
 
 
 # сума непарних чисел
 
-sum_of_unpaired = 0
-for i in nums:
-    if i % 2 > 0:
-        sum_of_unpaired = sum_of_unpaired + i
-    continue
-print("Sum of unpaired:", sum_of_unpaired)
+#sum_of_unpaired = 0
+#for i in nums:
+    #if i % 2 > 0:
+        #sum_of_unpaired = sum_of_unpaired + i
+    #continue
+#print("Sum of unpaired:", sum_of_unpaired)
 
 
 # добуток елементів з кратними індексами 3
-nums = [ 1, 7, 4, -5, -11, 3, 76, -34, 6, 2, 9 ]
-a = -5
-b = 76
-c = 2
-result = a * b * c
-print(f"Result of multiplication:", result)
 
+# v1
+#nums = [ 1, 7, 4, -5, -11, 3, 76, -34, 6, 2, 9 ]
+#a = -5
+#b = 76
+#c = 2
+#result = a * b * c
+#print(f"Result of multiplication:", result)
+
+# v2
+
+import random
+
+#numbers = [random.randint(-100, 100) for _ in range(20)]
+#print("List of numbers:", numbers)
+
+
+#product_of_multiples_of_3 = 1
+#for i in range(0, len(numbers), 3):
+    #product_of_multiples_of_3 *= numbers[i]
+
+#print("Product of numbers with indices multiples of 3:", product_of_multiples_of_3)
 
 # добуток елементів між мінімальним та максимальним елементом
 
-min_value = min(nums)
-max_value = max(nums)
-result = min(nums) * max(nums)
-print(f"Result (min_value * max_value): {result}")
+#min_value = min(nums)
+#max_value = max(nums)
+#result = min(nums) * max(nums)
+#print(f"Result (min_value * max_value): {result}")
 
 # суму елементів, що знаходяться між першим та останнім позитивними елементами
 
-list = [-1, 1, 3, -4, 4, -5, -6, 9, -5, -9, ]
-p1 = p2 = 0
-for p1, a in enumerate(list):
-    if a > 0:
-        break  # определить индекс первого положительного элемента
-for p2, a in enumerate(reversed(list)):
-    if a > 0:
-        break  # определить индекс последнего положительного элемента
-s = sum(list[p1+1: -p2-1])  # взять сумму между индексами
-print(s)
+#list = [-1, 1, 3, -4, 4, -5, -6, 9, -5, -9, ]
+#p1 = p2 = 0
+#for p1, a in enumerate(list):
+    #if a > 0:
+        #break  # определить индекс первого положительного элемента
+#for p2, a in enumerate(reversed(list)):
+    #if a > 0:
+        #break  # определить индекс последнего положительного элемента
+#s = sum(list[p1+1: -p2-1])  # взять сумму между индексами
+#print(s)
 
 # Lesson 5. Task 2
 
@@ -291,18 +306,84 @@ print(s)
 #Створити список цілих, що містить лише негативні числа з першого списку;
 #Створити список цілих, що містить лише позитивні числа з першого списку.
 
-from random import sample
-list = sample(range(-10, 11), 20)
-print(list)
+#from random import sample
+#list = sample(range(-10, 11), 20)
+#print(list)
 
-paired_list = [i for i in list if i % 2 == 0]
-unpaired_list = [j for j in list if j % 2]
-negative_list = [i for i in list if i < 0]
-positive_list = [i for i in list if i >= 0]
+#paired_list = [i for i in list if i % 2 == 0]
+#unpaired_list = [j for j in list if j % 2]
+#negative_list = [i for i in list if i < 0]
+#positive_list = [i for i in list if i >= 0]
 
-print(f"Paired list:", paired_list)
-print(f"Unpaired list:", unpaired_list)
-print(f"Negative list:", negative_list)
-print(f"Positive list:", positive_list)
+#print(f"Paired list:", paired_list)
+#print(f"Unpaired list:", unpaired_list)
+#print(f"Negative list:", negative_list)
+#print(f"Positive list:", positive_list)
 
 
+# Lesson 7. Task 1
+
+# Напишіть функцію, яка обчислює добуток елементів списку цілих. Список передається як параметр.
+# Отриманий результат повертається із функції.
+
+
+numbers_1 = [random.randint(1, 10) for _ in range(5)]
+print(numbers_1)
+
+def mult():
+    n1 = a
+    n2 = b
+    n3 = c
+    n4 = d
+    n5 = e
+    return
+
+
+
+
+
+
+
+
+
+
+# Task 2.
+
+# Напишіть функцію для знаходження мінімуму у списку цілих.
+# Список передається як параметр. Отриманий результат повертається із функції.
+
+
+
+
+
+# Task 3.
+
+# Напишіть функцію, яка визначає кількість простих чисел у списку цілих. Список передається як параметр.
+# Отриманий результат повертається із функції.
+
+
+
+
+# Task 4.
+
+# Напишіть функцію, яка видаляє зі списку ціле задане число.
+# З функції потрібно повернути кількість видаленних елементів.
+
+
+
+
+
+# Task 5.
+
+# Напишіть функцію, яка отримує два списки як параметр і повертає список, що містить елементи обох списків.
+
+
+
+
+
+
+# Task 6.
+
+#Напишіть функцію, яка обчислює ступінь кожного елемента списку цілих.
+# Значення для ступеня передається як параметр, список також передається як параметр.
+# Функція повертає новий список, який містить отримані результати.
